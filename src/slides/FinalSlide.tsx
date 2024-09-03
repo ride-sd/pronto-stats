@@ -1,6 +1,4 @@
-import { PRONTOCardData } from "../types";
-
-export function FinalSlide({ cardData }: { cardData: PRONTOCardData }) {
+export function FinalSlide() {
     return <>
         <img src="/FLEX_08-scaled.jpg" className="h-[50vh] w-full object-cover" />
         <div className="p-8">

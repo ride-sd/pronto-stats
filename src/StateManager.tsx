@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ParseCard from "./ParseCard";
-import type { PRONTOCardData, PRONTOBoardingData } from "./types";
+import type { PRONTOCardData } from "./types";
 import { CardIssuanceSlide } from "./slides/CardIssuanceSlide";
 import { TopRoutesSlide } from "./slides/TopRoutesSlide";
 import { RailRoutesSlide } from "./slides/RailRoutesSlide";
@@ -41,7 +41,7 @@ export default function StateManager() {
             {slide === 4 && <RapidCoverageSlide cardData={cardData} />}
             {slide === 5 && <ScenicCoverageSlide cardData={cardData} />}
             {slide === 6 && <HeartCoverageSlide cardData={cardData} />}
-            {slide === 7 && <FinalSlide cardData={cardData} />}
+            {slide === 7 && <FinalSlide />}
         </>}
     </>)
 }
